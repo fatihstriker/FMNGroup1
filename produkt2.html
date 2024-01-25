@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Webwinkel</title>
+</head>
+<body style="overflow: scroll;" class="content">
+	<header>
+	  <div class="image"><img src="images/logo.png" width="288px" height="143px" alt=""/></div>
+      <div class="overlay"></div>
+    </header>
+	<nav class="nav">
+           <ul>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="produkten.html">Producten</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li class="cart">
+				<a href="cart.html"><ion-icon name="basket"></ion-icon>Winkelwagen<span>0</span></a>
+                </li>
+            </ul>
+	</nav>
+	<div style="text-align: center;  border: 1px; padding: 0px;">
+	<div class="container">
+    <div class="image">
+			
+	<table id="detail" border="0" style="padding: 5px; border: 1px solid;">
+    <tbody >
+		<tr><td colspan="3"><h1>Product detail</h1><br></td></tr>	
+    <tr>
+      <td><img src="images/docentmethaar1.jpg" height="285px" width="450" alt=""></td><br>
+	  <td>&nbsp;&nbsp;</td>
+      <td valign="top" style="width: 400px; text-align: justify;"><img src="images/star.png" width="30" height="30" alt=""/><img src="images/star.png" width="30" height="30" alt=""/><img src="images/star.png" width="30" height="30" alt=""/><img src="images/star.png" width="30" height="30" alt=""/><img src="images/star.png" width="30" height="30" alt=""/><br><br>
+		Consultatie Level 2 is ons 2de niveau adviesdienst, ontworpen om bedrijven op een eenvoudige en effectieve manier te ondersteunen bij het verbeteren van hun bedrijfsprestaties. Met deze dienst bieden we toegankelijk en gericht advies, specifiek afgestemd op de behoeften van uw bedrijf. Hier is een overzicht van wat Consultatie Level 1 te bieden heeft:
+        <br>
+        1.Bedrijfsanalyse
+        <br>
+        2.Advies op Maat
+        <br>
+        3.Strategische Richtlijnen
+        <br>
+        4.Toegankelijke Communicatie
+        <br>
+        5.Follow-up Ondersteuning 
+        <br>
+        6.Diepgaande Performance Evaluatie
+        <br>
+        7.Geavanceerde Strategie-implementatie
+	</td>
+	</tr>
+    <tr>
+      <td><h3>Consultatie level 2</h3></td>
+      <td></td><br>
+	  <td></td>
+    </tr>
+    <tr>
+      <td><h3>&#8364 2000,00</h3></td>
+      <td>&nbsp;</td>
+	  <td><a style="text-align: center; color: white; position: relative; margin-left: 0%; margin-bottom: 0%" class="add-cart cart2"  href="produkten.html">Naar winkelwagen</a><input size="0" type="hidden" value="15" /></td>
+    </tr>
+    <tr>
+    <td></td>
+	<td>&nbsp;</td>
+    </tr>
+    
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  
+      var reviewForm = document.getElementById('reviewForm');
+  
+      reviewForm.addEventListener('submit', function (event) {
+        showReviewConfirmation(event);
+      });
+    });
+  
+    function showReviewConfirmation(event) {
+      event.preventDefault();
+  
+      console.log('Review confirmation message should be displayed.');
+      document.getElementById('reviewConfirmation').style.display = 'block';
+    }
+  </script>
+  
+  
+  
+  <body class="content">
+    <div class="containertje">
+        <h1>Reviews van klanten</h1>
+      </div>
+      <tr>
+        <td colspan="3">
+            <h2>Laat een review achter</h2>
+            <form id="reviewForm">
+                <label for="reviewText">Uw review:</label>
+                <textarea id="reviewText" name="reviewText" rows="1" cols="50" required></textarea>
+  
+                <label for="klantid">Bestelnummer:</label>
+                <textarea id="klantid" name="klantid" rows="1" cols="10" required></textarea>
+  
+                <label for="starRating">Beoordeling:</label>
+                <select id="starRating" name="starRating" required>
+                    <option value="5">5 sterren</option>
+                    <option value="4">4 sterren</option>
+                    <option value="3">3 sterren</option>
+                    <option value="2">2 sterren</option>
+                    <option value="1">1 ster</option>
+                </select>
+  
+                <button type="submit">Verstuur Review</button>
+              </form>
+  
+              <p id="reviewConfirmation" style="display: none; color: green; font-weight: bold;">
+                  Bedankt voor uw review! Na het authoriseren zal deze review op de site geplaatst worden.
+              </p>
+          </td>
+      </tr>
+        <div class="review">
+            <p><strong>Linda P.:</strong> Geweldige ervaring met deze aankoop! De kwaliteit overtrof mijn verwachtingen. Zou het zeker aan anderen aanbevelen.</p>
+            <div class="image"><img src="images/4 ster.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Mark R.:</strong> Vijf sterren! Snelle levering en uitstekende klantenservice. Het product voldeed aan al mijn eisen.</p>
+            <div class="image"><img src="images/ster 5.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Sophie M.:</strong> Onder de indruk van het unieke ontwerp van het product. Het voegt een stijlvolle touch toe aan mijn huis. Heel blij met deze vondst.</p>
+            <div class="image"><img src="images/4 ster.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Alex B.:</strong> Soepele transactie en snelle verzending. Het item kwam in perfecte staat aan. Ik zal hier zeker opnieuw kopen.</p>
+            <div class="image"><img src="images/4 ster.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Elena S.:</strong> Ik hou er absoluut van! Het product is precies wat ik nodig had. Het is duurzaam en functioneel. Kon niet gelukkiger zijn.</p>
+            <div class="image"><img src="images/ster 5.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Ryan T.:</strong> Teleurgesteld in het product. Het voldeed niet aan de verwachtingen. De kwaliteit ontbrak en het voelde als geldverspilling.</p>
+            <div class="image"><img src="images/ster 1.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Oliver W.:</strong> Geweldige ervaring! Het assortiment is divers en van hoge kwaliteit. Mijn bestelling werd snel geleverd, en ik ben zeer tevreden.</p>
+            <div class="image"><img src="images/ster 5.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Emma K.:</strong> Topproduct! De prijs-kwaliteitverhouding is onverslaanbaar. Het product voldoet volledig aan mijn verwachtingen, en ik ben blij met mijn aankoop.</p>
+            <div class="image"><img src="images/4 ster.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Daniel C.:</strong> Uitstekende klantenservice! Ik had wat vragen over mijn aankoop, en het supportteam was zeer behulpzaam en vriendelijk. Een aanrader.</p>
+            <div class="image"><img src="images/ster 5.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+        <div class="review">
+            <p><strong>Laura H.:</strong> Het product kwam niet overeen met de beschrijving. De kleuren klopten niet en het zag er goedkoop uit. Een beetje misleidend.</p>
+            <div class="image"><img src="images/ster 2.png" width="100px" height="30px" alt="4 sterren"/></div>
+        </div>
+    </div>
+    <footer style="margin: auto; width: 100%; padding: 30px; text-align:center ; top:20px;">Copyright © 2024 FMN Group</footer>
+  </body>
+  </body>
+  </html>

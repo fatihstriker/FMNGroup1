@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Webwinkel</title>
+</head>
+<style>
+
+	.container {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.image h1,
+	.image p,
+	.video {
+		margin-bottom: 20px;
+	}
+</style>
+
+<body style="overflow: scroll" class="content">
+    <header>
+        <div class="image"><img src="images/logo.png" width="288px" height="143px" alt=""/></div>
+        <div class="overlay"></div>
+    </header> 
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produkten.html">Producten</a></li>
+            <li><a href="overons.html">Over ons</a></li>
+            <li class="cart">
+                <a href="cart.html"><ion-icon name="basket"></ion-icon>Winkelwagen<span>0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="image">
+            <h1>Over FMN Group</h1>
+            <p>"Welkom bij FMN Group - Uw Strategische Partner voor Maximale Winst!
+
+                Bij FMN Group zijn we trots om een vooraanstaand adviesbureau te zijn dat zich toelegt op het begeleiden van bedrijven naar ongekend succes en winstgevendheid. Met een toewijding aan excellentie en een bewezen staat van dienst staan wij als uw vertrouwde partner in het navigeren door de complexiteiten van het zakelijke landschap.
+                
+                Onze Expertise:
+                Het hart van FMN Group wordt gevormd door een team van ervaren professionals en branche-experts die een schat aan kennis en ervaring meebrengen. Met specialisatie in uitgebreid bedrijfsadvies bieden wij op maat gemaakte oplossingen die de groei stimuleren, de efficiëntie verbeteren en uiteindelijk uw winst vergroten.
+                
+                Strategische Begeleiding:
+                In de dynamische zakelijke omgeving van vandaag is strategische besluitvorming van cruciaal belang. FMN Group excelleert in het bieden van scherpzinnige begeleiding om uw bedrijf niet alleen aan te passen aan verandering, maar ook om voorop te blijven lopen. Of u nu een startup bent op zoek naar een solide basis of een gevestigde onderneming die op zoek is naar innovatieve strategieën, onze adviseurs zijn toegewijd aan het vormgeven van een roadmap voor uw blijvend succes."</p><br>
+            <div class="video">
+                <video width="500" height="280" controls>
+                    <source src="images/testa.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+    </div>   
+    <footer style="text-align: center; position:relative; top:20px;">Copyright © 2024 FMN Group<br><br></footer>
+    
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
